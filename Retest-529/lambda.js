@@ -1,5 +1,4 @@
 exports.handler = function(event, context, callback) {
-    //new lambda file
-    
+    //new new
     callback(null, {"message": "Successfully executed"});
 }
