@@ -8,30 +8,11 @@
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "34a4300e-972e-4b63-9d5e-8cafc5f04bd4",
-          "7b49dba5-6598-43a1-84c8-7fc2a8cf4d78"
+          "7b49dba5-6598-43a1-84c8-7fc2a8cf4d78",
+          "4f5e6144-713a-4c55-be51-1b839619e250"
         ],
         "isRemovable": false,
         "filePath": "Retest-529"
-      },
-      "34a4300e-972e-4b63-9d5e-8cafc5f04bd4": {
-        "id": "34a4300e-972e-4b63-9d5e-8cafc5f04bd4",
-        "parent": "0d53723c-3b6c-4a76-bebc-92b6f3af59e1",
-        "name": "lambda.js",
-        "type": "LAMBDA_FILE",
-        "isDirectory": false,
-        "children": [],
-        "isRemovable": true,
-        "filePath": "Retest-529/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
-        "triggers": [],
-        "config": {
-          "runtime": "nodejs8.10",
-          "handler": "handler",
-          "timeout": 60,
-          "memory": 128,
-          "layers": []
-        }
       },
       "7b49dba5-6598-43a1-84c8-7fc2a8cf4d78": {
         "id": "7b49dba5-6598-43a1-84c8-7fc2a8cf4d78",
@@ -44,15 +25,37 @@
         "filePath": "Retest-529/new.js",
         "code": "<script type=\"text/javascript\">  \r\ndocument.write(\"Hello\");  \r\n</script>  ",
         "triggers": []
+      },
+      "4f5e6144-713a-4c55-be51-1b839619e250": {
+        "id": "4f5e6144-713a-4c55-be51-1b839619e250",
+        "parent": "0d53723c-3b6c-4a76-bebc-92b6f3af59e1",
+        "name": "lambda.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "Retest-529/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    //new lambda file\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [],
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        }
       }
     },
-    "deletedFiles": [],
+    "deletedFiles": [
+      "Retest-529/lambda.js",
+      "Retest-529/newlambda.js"
+    ],
     "rootNode": "0d53723c-3b6c-4a76-bebc-92b6f3af59e1",
     "openFiles": [
-      "34a4300e-972e-4b63-9d5e-8cafc5f04bd4",
-      "7b49dba5-6598-43a1-84c8-7fc2a8cf4d78"
+      "7b49dba5-6598-43a1-84c8-7fc2a8cf4d78",
+      "4f5e6144-713a-4c55-be51-1b839619e250"
     ],
-    "currentFileId": "7b49dba5-6598-43a1-84c8-7fc2a8cf4d78",
+    "currentFileId": "4f5e6144-713a-4c55-be51-1b839619e250",
     "resources": {},
     "customTemplate": {
       "dialect": null,
@@ -79,7 +82,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1552476813566
+    "lastSave": 1552477015351
   },
   "VCS_STATE": {
     "provider": "GitHub",
